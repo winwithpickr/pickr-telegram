@@ -91,7 +91,6 @@ Send in any Telegram group where the bot is an admin:
 | **Button** | Inline keyboard "Enter Giveaway" button — entries accumulated in Redis |
 | **Comments** | Comments in the linked discussion group thread |
 
-
 ## Building
 
 ```bash

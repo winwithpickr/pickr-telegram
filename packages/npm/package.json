@@ -1,0 +1,31 @@
+{
+  "name": "@winwithpickr/telegram",
+  "version": "0.1.0",
+  "description": "Telegram SDK for winwithpickr — command parsing, verification, and pool building for Telegram Mini Apps",
+  "license": "MIT",
+  "author": "bmcreations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winwithpickr/pickr-telegram"
+  },
+  "homepage": "https://winwithpickr.com",
+  "keywords": [
+    "giveaway",
+    "telegram",
+    "pickr",
+    "winwithpickr",
+    "verification",
+    "mini-app"
+  ],
+  "type": "module",
+  "main": "lib/telegram.js",
+  "files": [
+    "lib/"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

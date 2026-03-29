@@ -43,6 +43,19 @@ kotlin {
     }
 }
 
+tasks.register<Copy>("assembleNpm") {
+    group = "build"
+    description = "Assemble npm package into build/npm-package/"
+    dependsOn("jsBrowserProductionWebpack")
+    from(layout.buildDirectory.file("kotlin-webpack/js/productionExecutable/telegram.js")) {
+        into("lib")
+    }
+    from(layout.projectDirectory.dir("packages/npm")) {
+        include("package.json")
+    }
+    into(layout.buildDirectory.dir("npm-package"))
+}
+
 publishing {
     publications.withType<MavenPublication> {
         pom {
