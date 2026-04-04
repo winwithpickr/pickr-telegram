@@ -51,8 +51,8 @@ object TelegramCommandParser {
             return TelegramParsedCommand()
         }
 
-        // Check for setup/watch mode
-        if (args.equals("setup", ignoreCase = true) || args.equals("watch", ignoreCase = true)) {
+        // Check for setup/start mode
+        if (args.equals("setup", ignoreCase = true) || args.equals("start", ignoreCase = true)) {
             return TelegramParsedCommand(triggerMode = TriggerMode.WATCH)
         }
 
