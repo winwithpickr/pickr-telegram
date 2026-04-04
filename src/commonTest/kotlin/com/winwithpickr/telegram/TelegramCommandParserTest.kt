@@ -32,8 +32,8 @@ class TelegramCommandParserTest {
     }
 
     @Test
-    fun pickWatch() {
-        val cmd = TelegramCommandParser.parse("/pick watch")
+    fun pickStart() {
+        val cmd = TelegramCommandParser.parse("/pick start")
         assertNotNull(cmd)
         assertEquals(TriggerMode.WATCH, cmd.triggerMode)
     }
