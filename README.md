@@ -19,20 +19,6 @@ pickr-telegram handles everything specific to Telegram:
 - **Data source interface** — `TelegramDataSource` for Bot API access (implemented by server)
 - **JS exports** — `verifyPick()` and `parseCommand()` for Telegram Mini App verification
 
-## Install
-
-### Gradle (JVM / Kotlin Multiplatform)
-
-```kotlin
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation("com.winwithpickr:telegram:0.1.0")
-}
-```
-
 ## Modules
 
 | Module | Target | Description |
